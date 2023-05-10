@@ -1,0 +1,48 @@
+.advantages {
+  width: 100%;
+  padding: 110px 100px 118px;
+  background-color: $color-solitude;
+  min-height: 562px;
+  background-image: url(../img/iceberg.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  h2 {
+    margin-top: 0;
+    margin-bottom: 50px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 42px;
+    color: $color-tangaroa;
+  }
+}
+
+.advantages__list {
+  display: flex;
+  gap: 40px;
+}
+
+.advantages__item {
+  width: 365px;
+  padding: 31px 30px;
+  background-color: $color-alice-blue;
+  transition: .6s cubic-bezier(.55,0,.1,1);
+
+  h4 {
+    margin: 10px 0;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: $color-tangaroa;
+  }
+
+  p {
+    line-height: 20px;
+  }
+
+  &:hover {
+    box-shadow: 0 0 2px $color-alice-blue;
+    transform: scale(1.02);
+  }
+}
