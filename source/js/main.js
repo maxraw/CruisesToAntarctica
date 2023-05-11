@@ -44,7 +44,6 @@ window.addEventListener('DOMContentLoaded', () => {
         balloonContent: 'г. Санкт Петербург, ул. Большая Конюшенная, 19/8',
       }, {
         iconLayout: 'default#image',
-        iconImageClipRect: [[0, 0], [26, 47]],
         iconImageHref: 'img/svg/icon-pin.svg',
         iconImageSize: [18, 22],
         iconImageOffset: [-15, -27],

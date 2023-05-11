@@ -1452,18 +1452,18 @@ button,
   height: 100%;
 }
 
-.intro-text__container {
+.intro__text-container {
   position: relative;
   padding: 270px 198px 257px;
 }
-.intro-text__container h1 {
+.intro__text-container h1 {
   margin: 0;
   font-weight: 700;
   font-size: 54px;
   line-height: 66px;
   color: #F9FBFD;
 }
-.intro-text__container p {
+.intro__text-container p {
   margin-top: 10px;
   font-size: 20px;
   line-height: 24px;
