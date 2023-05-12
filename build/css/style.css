@@ -1757,7 +1757,7 @@ button,
 }
 @media (max-width: 767px) {
   .catalog {
-    padding: 57px 15px 66px;
+    padding: 57px 0 66px;
   }
   .catalog h2 {
     margin-bottom: 30px;
@@ -1788,6 +1788,7 @@ button,
   .catalog__list {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
+    width: 320px;
   }
 }
 
