@@ -1571,9 +1571,9 @@ button,
   -webkit-transition: all 0.4s ease-in-out;
   -o-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
-  -webkit-transform: translate(0px, -250px) rotate(0deg);
-  -ms-transform: translate(0px, -250px) rotate(0deg);
-  transform: translate(0px, -250px) rotate(0deg);
+  -webkit-transform: translate(0%, -100%) rotate(0deg);
+  -ms-transform: translate(0%, -100%) rotate(0deg);
+  transform: translate(0%, -100%) rotate(0deg);
   /* Направление выезжающей панели */
 }
 
@@ -1581,9 +1581,9 @@ button,
 .catalog__item:focus-within .catalog__item-content {
   padding: 72px 25px 35px 25px;
   opacity: 1;
-  -webkit-transform: translate(0px, 0px) rotate(0deg);
-  -ms-transform: translate(0px, 0px) rotate(0deg);
-  transform: translate(0px, 0px) rotate(0deg);
+  -webkit-transform: none;
+  -ms-transform: none;
+  transform: none;
 }
 
 .catalog__item-picture {
@@ -2001,14 +2001,21 @@ button,
   color: #011c40;
 }
 
-.contact__image-wrapper {
+.contacts__map {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+  grid-template-columns: 1fr;
+}
+
+.contacts__map-image {
   -ms-grid-column: 1;
   grid-column-start: 1;
   -ms-grid-row: 1;
   grid-row-start: 1;
 }
 
-.contact__map {
+.ymaps-2-1-79-map {
   width: 560px;
   height: 306px;
   -ms-grid-column: 1;
@@ -2277,7 +2284,7 @@ button,
     font-size: 11px;
   }
 
-  .contact__map {
+  .ymaps-2-1-79-map {
     width: 390px;
     height: 260px;
   }
@@ -2507,11 +2514,17 @@ button,
   }
 
   .contact__item svg {
+    height: 24px;
     -ms-flex-item-align: start;
     align-self: flex-start;
   }
 
-  .contact__map {
+  .contact__item-address svg {
+    width: 30px;
+    height: 30px;
+  }
+
+  .ymaps-2-1-79-map {
     width: 324px;
     height: 335px;
   }
@@ -2966,7 +2979,7 @@ button,
     margin-right: 0;
   }
 
-  .contact__image-wrapper {
+  .contacts__map-image {
     -ms-grid-column: 1;
     grid-column-start: 1;
     -ms-grid-row: 2;
@@ -2974,7 +2987,7 @@ button,
     margin: 0 auto;
   }
 
-  .contact__map {
+  .ymaps-2-1-79-map {
     -ms-grid-column: 1;
     grid-column-start: 1;
     -ms-grid-row: 2;
