@@ -2831,7 +2831,7 @@ button,
   }
 
   .catalog {
-    padding: 57px 15px 66px;
+    padding: 57px 0 66px;
   }
 
   .catalog h2 {
@@ -2843,6 +2843,7 @@ button,
   .catalog__list {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
+    width: 320px;
   }
 
   .catalog__item {
@@ -2946,6 +2947,7 @@ button,
   .contact__wrapper img {
     width: 290px;
     height: 316px;
+    margin: 0 auto;
   }
 
   .contact__info {
