@@ -2001,14 +2001,14 @@ button,
   color: #011c40;
 }
 
-.contacts__map {
+.contact__map {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr;
   grid-template-columns: 1fr;
 }
 
-.contacts__map-image {
+.contact__map-image {
   -ms-grid-column: 1;
   grid-column-start: 1;
   -ms-grid-row: 1;
@@ -2979,7 +2979,7 @@ button,
     margin-right: 0;
   }
 
-  .contacts__map-image {
+  .contact__map-image {
     -ms-grid-column: 1;
     grid-column-start: 1;
     -ms-grid-row: 2;
