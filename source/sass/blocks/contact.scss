@@ -142,12 +142,12 @@
   }
 }
 
-.contacts__map {
+.contact__map {
   display: grid;
   grid-template-columns: 1fr;
 }
 
-.contacts__map-image {
+.contact__map-image {
   grid-column-start: 1;
   grid-row-start: 1;
 
