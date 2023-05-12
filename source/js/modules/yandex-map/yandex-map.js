@@ -1,5 +1,5 @@
 import {PIN_LOCATION} from './map-initials';
-const mapImage = document.querySelector('.contacts__map-image');
+const mapImage = document.querySelector('.contact__map-image');
 
 mapImage.classList.remove('no-js');
 

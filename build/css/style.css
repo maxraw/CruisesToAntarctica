@@ -2609,21 +2609,21 @@ button,
   }
 }
 
-.contacts__map {
+.contact__map {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr;
   grid-template-columns: 1fr;
 }
 
-.contacts__map-image {
+.contact__map-image {
   -ms-grid-column: 1;
       grid-column-start: 1;
   -ms-grid-row: 1;
       grid-row-start: 1;
 }
 @media (max-width: 767px) {
-  .contacts__map-image {
+  .contact__map-image {
     -ms-grid-column: 1;
         grid-column-start: 1;
     -ms-grid-row: 2;
