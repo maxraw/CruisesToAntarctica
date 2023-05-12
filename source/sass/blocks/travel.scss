@@ -2,6 +2,27 @@
   display: flex;
   padding: 122px 105px 145px;
   gap: 20px;
+
+  @include vp-1023 {
+    padding: 90px 44px 73px;
+
+    img {
+      width: 324px;
+      height: 175px;
+      margin-top: 10px;
+    }
+  }
+
+  @include vp-767 {
+    padding: 57px 15px 83px;
+    flex-direction: column;
+
+    img {
+      width: 290px;
+      height: 156px;
+      margin: 10px auto 0;
+    }
+  }
 }
 
 .travel__information {
@@ -20,5 +41,46 @@
     font-size: 16px;
     line-height: 24px;
     color: $color-tangaroa;
+  }
+
+  @include vp-1279 {
+    h2 {
+      margin-top: 0;
+      font-size: 18px;
+      line-height: 38px;
+    }
+
+    p {
+      font-size: 9px;
+      line-height: 20px;
+    }
+  }
+
+  @include vp-1023 {
+    h2 {
+      font-size: 26px;
+      line-height: 36px;
+    }
+
+    p {
+      width: 95%;
+      margin-top: 0;
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+
+  @include vp-767 {
+    width: 100%;
+
+    h2 {
+      margin-bottom: 14px;
+      font-size: 24px;
+      line-height: 34px;
+    }
+
+    p {
+      width: 100%;
+    }
   }
 }

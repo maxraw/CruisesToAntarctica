@@ -6,9 +6,19 @@
 
 .header__container {
   padding: 30px 100px;
+
+  @include vp-1023 {
+    padding: 30px 44px;
+    padding-top: 0;
+  }
+
+  @include vp-767 {
+    padding: 30px 15px;
+    padding-top: 0;
+  }
 }
 
-@media (max-width: $vp-768) {
+@media (max-width: $vp-767) {
   .is-open .header__container {
     padding-left: 36px;
   }

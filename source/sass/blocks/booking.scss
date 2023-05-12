@@ -3,12 +3,12 @@
   min-height: 555px;
 
   img {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  object-position: center;
-  object-fit: cover;
-  z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    object-fit: cover;
+    z-index: -1;
   }
 }
 
@@ -17,6 +17,25 @@
   justify-content: space-between;
   padding: 50px 163px;
   gap: 1vw;
+
+  @include vp-1279 {
+    padding: 50px 115px;
+  }
+
+  @include vp-1023 {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 39px;
+    padding-top: 72px;
+    padding-bottom: 100px;
+  }
+
+  @include vp-767 {
+    padding: 50px 15px;
+    padding-top: 52px;
+    padding-bottom: 66px;
+    gap: 21px;
+  }
 }
 
 .booking__content {
@@ -24,22 +43,64 @@
   transform: translate(0, -12px);
 
   h2 {
-  margin-bottom: 6px;
-  font-family: inherit;
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 60px;
-  color: $color-tangaroa;
+    margin-bottom: 6px;
+    font-family: inherit;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 60px;
+    color: $color-tangaroa;
   }
 
   p {
-  margin-top: 6px;
-  width: 60%;
-  font-family: inherit;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 27px;
-  color: $color-tangaroa;
+    margin-top: 6px;
+    width: 60%;
+    font-family: inherit;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 27px;
+    color: $color-tangaroa;
+  }
+
+  @include vp-1279 {
+    h2 {
+      font-size: 24px;
+    }
+
+    p {
+      font-size: 11px;
+    }
+  }
+
+  @include vp-1023 {
+    margin: auto;
+    text-align: center;
+
+    h2 {
+      margin-bottom: 5px;
+      font-size: 34px;
+      line-height: 51px;
+    }
+
+    p {
+      margin: auto;
+      width: 70%;
+      font-size: 18px;
+      line-height: 27px;
+    }
+  }
+
+  @include vp-767 {
+    h2 {
+      margin-bottom: 13px;
+      font-size: 24px;
+      line-height: 31px;
+    }
+
+    p {
+      width: 95%;
+      font-size: 16px;
+      line-height: 22px;
+    }
   }
 }
 
@@ -50,45 +111,67 @@
     padding: 26px 50px 52px;
     width: 403px;
     background-color: $color-tangaroa;
+  }
+
+  p {
+    margin-bottom: 27px;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    color: $color-alice-blue;
+  }
+
+  label {
+    position: relative;
+  }
+
+  input {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 11px 15px 10px;
+    font-family: inherit;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: $color-tangaroa-opacity;
+    background-color: $color-alice-blue;
+    border: 1px solid $color-alice-blue;
+    outline: none;
+  }
+
+  input[type="checkbox"] {
+    margin: 0;
+    padding: 0;
+  }
+
+  input::placeholder {
+    font-family: inherit;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: $color-tangaroa-opacity;
+  }
+
+  @include vp-1023 {
+    margin: auto;
+
+    form {
+      padding: 26px 50px 50px;
+    }
+  }
+
+  @include vp-767 {
+    form {
+      width: 290px;
+      padding: 35px 30px 39px;
+    }
 
     p {
-      margin-bottom: 27px;
-      font-family: inherit;
-      font-weight: 500;
-      font-size: 18px;
-      line-height: 27px;
-      color: $color-alice-blue;
-    }
-
-    label {
-      position: relative;
-    }
-
-    input {
-      width: 100%;
-      margin-bottom: 20px;
-      padding: 11px 15px 10px;
-      font-family: inherit;
-      font-weight: 400;
-      font-size: 14px;
-      line-height: 21px;
-      color: $color-tangaroa-opacity;
-      background-color: $color-alice-blue;
-      border: 1px solid $color-alice-blue;
-      outline: none;
-    }
-
-    input[type="checkbox"] {
-      margin: 0;
-      padding: 0;
-    }
-
-    input::placeholder {
-      font-family: inherit;
-      font-weight: 400;
-      font-size: 14px;
-      line-height: 21px;
-      color: $color-tangaroa-opacity;
+      margin: auto auto 28px;
+      line-height: 25px;
+      text-align: center;
+      width: 95%;
     }
   }
 }
@@ -167,12 +250,22 @@
 .booking__form-checkbox {
   margin-bottom: 30px;
   transform: translate(0, -1px);
+
+  @include vp-767 {
+    margin-bottom: 27px;
+    transform: translate(0, -2px);
+  }
 }
 
 .booking__form-checkbox label {
   display: grid;
   grid-template-columns: 0.2fr 3fr;
   gap: 4px;
+
+  @include vp-767 {
+    grid-template-columns: 0.3fr 3fr;
+    gap: 7px;
+  }
 }
 
 .booking__form-checkbox-span {
@@ -186,6 +279,11 @@
   color: $color-alice-blue;
   transition: $trans-easeinout;
   cursor: pointer;
+
+  @include vp-767 {
+    line-height: 11px;
+    width: 77%;
+  }
 }
 
 .booking__form-checkbox-span:hover,
@@ -226,6 +324,14 @@
   opacity: 0;
 }
 
+.booking__form-checkbox input,
+.booking__form-checkbox input::after {
+  @include vp-767 {
+    width: 20px;
+    height: 20px;
+  }
+}
+
 .booking__form-checkbox input:checked::after {
   top: 3px;
   left: 4px;
@@ -238,6 +344,11 @@
   border-width: 1.5px;
   transform: rotate(-45deg);
   opacity: 1;
+
+  @include vp-767 {
+    top: 5px;
+    left: 5px;
+  }
 }
 
 .booking__form-checkbox input:hover,
@@ -248,98 +359,4 @@
 .booking__form-checkbox input:checked:hover::after,
 .booking__form-checkbox input:checked:focus::after {
   border-color: #041427;
-}
-
-@media (max-width: $vp-1024) {
-  .booking__container {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 39px;
-    padding-top: 72px;
-    padding-bottom: 100px;
-  }
-
-  .booking__content {
-    margin: auto;
-    text-align: center;
-  }
-
-  .booking__content h2 {
-    margin-bottom: 5px;
-    font-size: 34px;
-    line-height: 51px;
-  }
-
-  .booking__content p {
-    margin: auto;
-    width: 58%;
-    font-size: 18px;
-    line-height: 27px;
-  }
-
-  .booking__form {
-    margin: auto;
-  }
-
-  .booking__form form {
-    padding: 26px 50px 50px;
-  }
-}
-
-@media (max-width: $vp-768) {
-  .booking__container {
-    padding-top: 52px;
-    padding-bottom: 66px;
-    gap: 21px;
-  }
-
-  .booking__content h2 {
-    margin-bottom: 13px;
-    font-size: 24px;
-    line-height: 31px;
-  }
-
-  .booking__content p {
-    width: 95%;
-    font-size: 16px;
-    line-height: 22px;
-  }
-
-  .booking__form form {
-    width: 290px;
-    padding: 35px 30px 39px;
-  }
-
-  .booking__form p {
-    margin: auto auto 28px;
-    line-height: 25px;
-    text-align: center;
-    width: 95%;
-  }
-
-  .booking__form-checkbox {
-    margin-bottom: 27px;
-    transform: translate(0, -2px);
-  }
-
-  .booking__form-checkbox label {
-    grid-template-columns: 0.3fr 3fr;
-    gap: 7px;
-  }
-
-  .booking__form-checkbox input,
-  .booking__form-checkbox input::after {
-    width: 20px;
-    height: 20px;
-  }
-
-  .booking__form-checkbox input:checked::after {
-    top: 5px;
-    left: 5px;
-  }
-
-  .booking__form-checkbox-span {
-    line-height: 11px;
-    width: 77%;
-  }
 }

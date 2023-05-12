@@ -11,6 +11,25 @@
     line-height: 42px;
     color: $color-tangaroa;
   }
+
+  @include vp-1023 {
+    padding: 88px 60px 100px;
+
+    h2 {
+      font-size: 26px;
+      line-height: 39px;
+    }
+  }
+
+  @include vp-767 {
+    padding: 57px 15px 66px;
+
+    h2 {
+      margin-bottom: 30px;
+      font-size: 24px;
+      line-height: 36px;
+    }
+  }
 }
 
 .catalog__list {
@@ -18,6 +37,16 @@
   grid-template-columns: 1fr 1fr 1fr 1fr;
   column-gap: 30px;
   row-gap: 30px;
+
+  @include vp-1023 {
+    grid-template-columns: 1fr 1fr;
+    width: 648px;
+    margin: 0 auto;
+  }
+
+  @include vp-767 {
+    grid-template-columns: 1fr;
+  }
 }
 
 .catalog__item {
@@ -37,7 +66,7 @@
   h3 {
     position: absolute;
     bottom: 0;
-    margin: 0 0 22px 30px;
+    margin: 0 30px 22px 30px;
     font-weight: 500;
     font-size: 18px;
     line-height: 27px;
@@ -83,6 +112,75 @@
       color: $color-mariner;
     }
   }
+
+  @include vp-1279 {
+    h3 {
+      font-size: 10px;
+    }
+
+    dt {
+      font-size: 8px;
+      line-height: 10px;
+    }
+
+    dd {
+      font-size: 8px;
+      line-height: 10px;
+    }
+
+    a {
+      padding: 10px 25px;
+      font-size: 10px;
+    }
+  }
+
+  @include vp-1023 {
+    img {
+      width: 309px;
+      height: 386px;
+    }
+
+    h3 {
+      margin: 0 36px 25px;
+      font-size: 18px;
+      line-height: 27px;
+    }
+
+    dt {
+      font-size: 14px;
+      line-height: 20px;
+    }
+
+    dd {
+      font-size: 14px;
+      line-height: 20px;
+    }
+
+    a {
+      width: 100%;
+      max-width: none;
+      padding: 10px 25px;
+      font-size: 14px;
+      text-align: center;
+      line-height: 21px;
+    }
+  }
+
+  @include vp-767 {
+    width: 270px;
+    margin: 0 auto;
+
+    img {
+      width: 270px;
+      height: 386px;
+      margin: 0 auto;
+    }
+
+    h3 {
+      margin-left: 26px;
+      margin-bottom: 18px;
+    }
+  }
 }
 
 .catalog__item > .catalog__item-content {
@@ -106,11 +204,19 @@
 .catalog__item:focus-within > h3 {
   top: 30px;
   margin-left: 25px;
+
+  @include vp-1023 {
+    margin-left: 35px;
+  }
+
+  @include vp-767 {
+    margin-left: 25px;
+  }
 }
 
 .catalog__item .catalog__item-content {
   opacity: 0;
-  background-color: $color-tangaroa; /* Фон блока при наведении */
+  background-color: $color-tangaroa;
   transition: all 0.4s ease-in-out;
   transform: translate(0px, -250px) rotate(0deg); /* Направление выезжающей панели */
 }
@@ -120,6 +226,15 @@
   padding: 72px 25px 35px 25px;
   opacity: 1;
   transform: translate(0px, 0px) rotate(0deg);
+
+  @include vp-1023 {
+    padding: 72px 35px 35px 35px;
+  }
+
+  @include vp-767 {
+    padding-left: 25px;
+    padding-right: 25px;
+  }
 }
 
 .catalog__item-picture {
