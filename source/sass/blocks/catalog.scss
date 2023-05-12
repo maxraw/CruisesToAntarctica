@@ -219,14 +219,14 @@
   opacity: 0;
   background-color: $color-tangaroa;
   transition: all 0.4s ease-in-out;
-  transform: translate(0px, -250px) rotate(0deg); /* Направление выезжающей панели */
+  transform: translate(-0%, -100%) rotate(0deg); /* Направление выезжающей панели */
 }
 
 .catalog__item:hover .catalog__item-content,
 .catalog__item:focus-within .catalog__item-content {
   padding: 72px 25px 35px 25px;
   opacity: 1;
-  transform: translate(0px, 0px) rotate(0deg);
+  transform: none;
 
   @include vp-1023 {
     padding: 72px 35px 35px 35px;

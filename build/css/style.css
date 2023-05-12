@@ -1964,18 +1964,18 @@ button,
   -webkit-transition: all 0.4s ease-in-out;
   -o-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
-  -webkit-transform: translate(0px, -250px) rotate(0deg);
-      -ms-transform: translate(0px, -250px) rotate(0deg);
-          transform: translate(0px, -250px) rotate(0deg); /* Направление выезжающей панели */
+  -webkit-transform: translate(0%, -100%) rotate(0deg);
+      -ms-transform: translate(0%, -100%) rotate(0deg);
+          transform: translate(0%, -100%) rotate(0deg); /* Направление выезжающей панели */
 }
 
 .catalog__item:hover .catalog__item-content,
 .catalog__item:focus-within .catalog__item-content {
   padding: 72px 25px 35px 25px;
   opacity: 1;
-  -webkit-transform: translate(0px, 0px) rotate(0deg);
-      -ms-transform: translate(0px, 0px) rotate(0deg);
-          transform: translate(0px, 0px) rotate(0deg);
+  -webkit-transform: none;
+      -ms-transform: none;
+          transform: none;
 }
 @media (max-width: 1023px) {
   .catalog__item:hover .catalog__item-content,
@@ -2591,6 +2591,7 @@ button,
     font-size: 16px;
   }
   .contact__item svg {
+    height: 24px;
     -ms-flex-item-align: start;
         align-self: flex-start;
   }
@@ -2601,14 +2602,28 @@ button,
   }
 }
 
-.contact__image-wrapper {
+@media (max-width: 1023px) {
+  .contact__item-address svg {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.contacts__map {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+  grid-template-columns: 1fr;
+}
+
+.contacts__map-image {
   -ms-grid-column: 1;
       grid-column-start: 1;
   -ms-grid-row: 1;
       grid-row-start: 1;
 }
 @media (max-width: 767px) {
-  .contact__image-wrapper {
+  .contacts__map-image {
     -ms-grid-column: 1;
         grid-column-start: 1;
     -ms-grid-row: 2;
@@ -2617,7 +2632,7 @@ button,
   }
 }
 
-.contact__map {
+.ymaps-2-1-79-map {
   width: 560px;
   height: 306px;
   -ms-grid-column: 1;
@@ -2627,19 +2642,19 @@ button,
   z-index: 1;
 }
 @media (max-width: 1279px) {
-  .contact__map {
+  .ymaps-2-1-79-map {
     width: 390px;
     height: 260px;
   }
 }
 @media (max-width: 1023px) {
-  .contact__map {
+  .ymaps-2-1-79-map {
     width: 324px;
     height: 335px;
   }
 }
 @media (max-width: 767px) {
-  .contact__map {
+  .ymaps-2-1-79-map {
     -ms-grid-column: 1;
         grid-column-start: 1;
     -ms-grid-row: 2;

@@ -14,6 +14,29 @@ window.addEventListener('DOMContentLoaded', () => {
   const burger = new Burger();
   burger.init();
 
+  setTimeout(() => {
+    initMap({
+      id: 'map',
+      initials: {
+        center: MAP_CENTER,
+        controls: [],
+        zoom: DEFAULT_ZOOM,
+      },
+      placemark: [
+        {
+          hintContent: PIN_INFO,
+        },
+        {
+          iconImageHref: PIN_IMAGE,
+          iconImageSize: [18, 22],
+          iconLayout: 'default#image',
+          iconShadow: false,
+          iconImageOffset: [-9, -22],
+        }
+      ],
+    });
+  }, 3000);
+
   // Modules
   // ---------------------------------
 
