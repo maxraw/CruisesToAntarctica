@@ -9,7 +9,7 @@
 }
 
 .nav__logo svg {
-  color: $color-alice-blue;
+  fill: $color-alice-blue;
   transition: $trans-modal;
 }
 
@@ -164,7 +164,7 @@
   }
 
   .is-open .nav__logo svg {
-    color: $color-tangaroa;
+    fill: $color-tangaroa;
   }
 
   .is-open .nav__button {

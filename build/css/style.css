@@ -573,11 +573,6 @@ button,
   margin: 0 auto;
   padding: 0 40px;
 }
-@media (max-width: 1439px) {
-  .container {
-    padding: 0 32px;
-  }
-}
 @media (max-width: 1023px) {
   .container {
     padding: 0 24px;
@@ -1199,7 +1194,7 @@ button,
 }
 
 .nav__logo svg {
-  color: #f9fbfd;
+  fill: #f9fbfd;
   -webkit-transition: 0.6s cubic-bezier(0.55, 0, 0.1, 1);
   -o-transition: 0.6s cubic-bezier(0.55, 0, 0.1, 1);
   transition: 0.6s cubic-bezier(0.55, 0, 0.1, 1);
@@ -1387,7 +1382,7 @@ button,
     background-color: #f9fbfd;
   }
   .is-open .nav__logo svg {
-    color: #011c40;
+    fill: #011c40;
   }
   .is-open .nav__button {
     margin-left: auto;
@@ -1466,7 +1461,7 @@ button,
 .intro img {
   position: absolute;
   width: 100%;
-  height: 100%;
+  height: 101.8%;
 }
 
 .intro__text-container {
