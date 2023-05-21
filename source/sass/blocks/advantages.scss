@@ -17,26 +17,20 @@
     color: $color-tangaroa;
   }
 
-  @include vp-1279 {
-    h2 {
-      font-size: 22px;
-      line-height: 39px;
-    }
-  }
-
   @include vp-1023 {
     padding: 90px 44px 100px;
 
     h2 {
+      margin-bottom: 46px;
       font-size: 26px;
     }
   }
 
   @include vp-767 {
-    padding: 56px 15px 63px;
+    padding: 56px 15px 66px;
 
     h2 {
-      margin-bottom: 31px;
+      margin-bottom: 33px;
       font-size: 24px;
       line-height: 36px;
     }
@@ -81,13 +75,15 @@
   }
 
   @include vp-1023 {
-    padding: 25px 14px 5px 20px;
+    padding: 27px 14px 5px 18px;
 
     svg {
       height: 26px;
     }
 
     h4 {
+      margin-bottom: -2px;
+      margin-top: 12px;
       font-size: 18px;
       line-height: 25px;
     }
@@ -99,6 +95,7 @@
 
   @include vp-767 {
     width: auto;
+    padding: 27px 18px 2px 18px;
 
     svg {
       margin-left: -4px;

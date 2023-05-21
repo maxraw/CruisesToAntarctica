@@ -22,7 +22,7 @@
   }
 
   @include vp-767 {
-    padding: 57px 0 66px;
+    padding: 57px 25px 66px;
 
     h2 {
       margin-bottom: 30px;
@@ -46,7 +46,7 @@
 
   @include vp-767 {
     grid-template-columns: 1fr;
-    width: 320px;
+    width: 100%;
   }
 }
 
@@ -78,6 +78,7 @@
   dl {
     margin: 0;
     padding: 0;
+    overflow: auto;
   }
 
   dt {
@@ -114,27 +115,6 @@
     }
   }
 
-  @include vp-1279 {
-    h3 {
-      font-size: 10px;
-    }
-
-    dt {
-      font-size: 8px;
-      line-height: 10px;
-    }
-
-    dd {
-      font-size: 8px;
-      line-height: 10px;
-    }
-
-    a {
-      padding: 10px 25px;
-      font-size: 10px;
-    }
-  }
-
   @include vp-1023 {
     img {
       width: 309px;
@@ -168,11 +148,11 @@
   }
 
   @include vp-767 {
-    width: 270px;
+    width: 100%;
     margin: 0 auto;
 
     img {
-      width: 270px;
+      width: 100%;
       height: 386px;
       margin: 0 auto;
     }
@@ -196,7 +176,6 @@
 .catalog__item:hover > .catalog__item-content,
 .catalog__item:focus-within > .catalog__item-content {
   position: absolute;
-  overflow: auto;
   top: 0;
   left: 0;
 }

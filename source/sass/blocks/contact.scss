@@ -22,13 +22,6 @@
     max-width: 560px;
   }
 
-  @include vp-1279 {
-    img {
-      width: 390px;
-      height: 260px;
-    }
-  }
-
   @include vp-1023 {
     column-gap: 30px;
 
@@ -65,14 +58,6 @@
     color: $color-tangaroa;
   }
 
-  @include vp-1279 {
-    padding-top: 40px;
-
-    h3 {
-      font-size: 14px;
-    }
-  }
-
   @include vp-1023 {
     padding-top: 65px;
 
@@ -107,12 +92,6 @@
     color: $color-tangaroa;
   }
 
-  @include vp-1279 {
-    a {
-      font-size: 11px;
-    }
-  }
-
   @include vp-1023 {
     a {
       margin-left: 13px;
@@ -129,6 +108,7 @@
   @include vp-767 {
     a {
       margin-right: 0;
+      margin-left: 10px;
     }
   }
 }
@@ -145,6 +125,18 @@
 .contact__map {
   display: grid;
   grid-template-columns: 1fr;
+  width: 560px;
+  height: 306px;
+
+  @include vp-1023 {
+    width: 324px;
+    height: 335px;
+  }
+
+  @include vp-767 {
+    width: 100%;
+    height: 316px;
+  }
 }
 
 .contact__map-image {
@@ -164,11 +156,6 @@
   grid-column-start: 1;
   grid-row-start: 1;
   z-index: 1;
-
-  @include vp-1279 {
-    width: 390px;
-    height: 260px;
-  }
 
   @include vp-1023 {
     width: 324px;

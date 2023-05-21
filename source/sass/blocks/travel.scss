@@ -4,7 +4,8 @@
   gap: 20px;
 
   @include vp-1023 {
-    padding: 90px 44px 73px;
+    padding: 101px 44px 78px;
+    gap: 14px;
 
     img {
       width: 324px;
@@ -20,7 +21,7 @@
     img {
       width: 290px;
       height: 156px;
-      margin: 10px auto 0;
+      margin: 14px auto 0;
     }
   }
 }
@@ -43,21 +44,10 @@
     color: $color-tangaroa;
   }
 
-  @include vp-1279 {
-    h2 {
-      margin-top: 0;
-      font-size: 18px;
-      line-height: 38px;
-    }
-
-    p {
-      font-size: 9px;
-      line-height: 20px;
-    }
-  }
-
   @include vp-1023 {
     h2 {
+      margin-top: 0;
+      margin-bottom: 16px;
       font-size: 26px;
       line-height: 36px;
     }

@@ -74,12 +74,12 @@
           <img src="img/intro_background-desktop.jpg" width="1366" height="650" alt="Фотография берега Антарктики."
             srcset="img/intro_background-desktop@2x.jpg 2x" loading="lazy">
         </picture>
-        <div class="intro__text-container">
+        <div class="intro__text-container container">
           <h1 class="">Круизы в&nbsp;Антарктику</h1>
           <p>Волшебный мир айсбергов и пингвинов</p>
         </div>
       </section>
-      <section class="travel" id="travel">
+      <section class="travel container" id="travel">
         <div class="travel__information">
           <h2>Путешествие на&nbsp;край&nbsp;Земли</h2>
           <p>Это волшебное путешествие поможет вам познакомиться поближе с удивительным миром Антарктики. Наш круизный
@@ -117,7 +117,7 @@
             </svg>
             <h4>Система все&nbsp;включено</h4>
             <p>
-              Все наши круизы работают по&nbsp;системе&nbsp;«Все Включено».
+              Все наши круизы работают по системе «Все Включено».
               Великолепные блюда и безлимитный бар доступны для вас 24 часа.
             </p>
           </li>
@@ -133,7 +133,7 @@
           </li>
         </ul>
       </section>
-      <section class="catalog" id="catalog">
+      <section class="catalog container" id="catalog">
         <h2>Ближайшие круизы</h2>
         <ul class="catalog__list list">
           <li class="catalog__item">
@@ -404,8 +404,9 @@
                 <input id="phone" type="tel" name="Phone" placeholder="Телефон" required="">
                 <span class="booking__form-span">Телефон</span>
               </label>
-              <label for="email" data-validate-type="email">
-                <input id="email" type="email" name="Email" placeholder="Email">
+              <label for="email" data-required="" data-validate-type="email"
+                data-message-base="Данное поле необходимо заполнить">
+                <input id="email" type="email" name="Email" placeholder="Email" required="">
                 <span class="booking__form-span">Email</span>
               </label>
               <div class="booking__form-checkbox">
@@ -421,7 +422,7 @@
           </div>
         </div>
       </section>
-      <section class="contact" id="contact">
+      <section class="contact container" id="contact">
         <div class="contact__wrapper">
           <div class="contact__map" id="map">
             <div class="contact__map-image no-js">

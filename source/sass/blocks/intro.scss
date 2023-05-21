@@ -1,13 +1,18 @@
 .intro {
   position: relative;
   z-index: 0;
-  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
   background-color: $color-mariner;
 
   img {
     position: absolute;
     width: 100%;
     height: 101.8%;
+  }
+
+  @include vp-767 {
+    img {
+      height: 100%;
+    }
   }
 }
 
@@ -31,20 +36,8 @@
     text-shadow: $shadow-dark;
   }
 
-  @include vp-1279 {
-    h1 {
-      font-size: 44px;
-      line-height: 56px;
-    }
-
-    p {
-      font-size: 16px;
-      line-height: 20px;
-    }
-  }
-
   @include vp-1023 {
-    padding: 270px 44px 257px;
+    padding: 270px 44px 246px;
 
     h1 {
       font-size: 50px;

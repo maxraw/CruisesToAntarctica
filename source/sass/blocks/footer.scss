@@ -98,10 +98,6 @@
   color: $color-alice-blue;
   transition: $trans-modal;
 
-  @include vp-1279 {
-    font-size: 14px;
-  }
-
   @include vp-1023 {
     font-size: 12px;
     line-height: 15px;
@@ -154,7 +150,7 @@
   @include vp-767 {
     margin-left: 0;
     margin-bottom: 22px;
-    transform: translate(-2px, 0);
+    transform: translate(-4px, 2px);
   }
 }
 
