@@ -98,10 +98,12 @@
   }
 
   a {
+    width: 100%;
     max-width: 210px;
     text-decoration: none;
-    padding: 10px 46px;
+    padding: 10px 0;
     word-wrap: break-word;
+    text-align: center;
     color: $color-tangaroa;
     background-color: $color-alice-blue;
     border-radius: 0;

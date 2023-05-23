@@ -1453,6 +1453,7 @@ button,
   padding: 270px 198px 257px;
 }
 .intro__text-container h1 {
+  width: 636px;
   margin: 0;
   font-weight: 700;
   font-size: 54px;
@@ -1484,6 +1485,7 @@ button,
     padding: 176px 15px 164px;
   }
   .intro__text-container h1 {
+    width: 265px;
     font-size: 36px;
     line-height: 45px;
   }
@@ -1500,6 +1502,11 @@ button,
   display: flex;
   padding: 122px 105px 145px;
   gap: 20px;
+}
+@media (max-width: 1279px) {
+  .travel {
+    padding: 122px 60px 145px;
+  }
 }
 @media (max-width: 1023px) {
   .travel {
@@ -1542,6 +1549,14 @@ button,
   font-size: 16px;
   line-height: 24px;
   color: #011c40;
+}
+@media (max-width: 1279px) {
+  .travel__information {
+    width: 80%;
+  }
+  .travel__information h2 {
+    margin-top: 10px;
+  }
 }
 @media (max-width: 1023px) {
   .travel__information h2 {
@@ -1799,10 +1814,12 @@ button,
   color: #d8d8d9;
 }
 .catalog__item a {
+  width: 100%;
   max-width: 210px;
   text-decoration: none;
-  padding: 10px 46px;
+  padding: 10px 0;
   word-wrap: break-word;
+  text-align: center;
   color: #011c40;
   background-color: #f9fbfd;
   border-radius: 0;
@@ -1970,6 +1987,11 @@ button,
           justify-content: space-between;
   padding: 50px 163px;
   gap: 1vw;
+}
+@media (max-width: 1279px) {
+  .booking__container {
+    padding: 50px;
+  }
 }
 @media (max-width: 1023px) {
   .booking__container {
@@ -2149,12 +2171,6 @@ button,
   font-size: 14px;
   line-height: 21px;
   color: rgba(1, 28, 64, 0.7);
-  -webkit-transition: all 0.5s ease-in-out;
-  -o-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
-  -webkit-transition-property: all;
-  -o-transition-property: all;
-  transition-property: all;
   opacity: 0;
 }
 
@@ -2279,9 +2295,6 @@ button,
   font-size: 10px;
   line-height: 13px;
   color: #f9fbfd;
-  -webkit-transition: all 0.5s ease-in-out;
-  -o-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
   cursor: pointer;
 }
 @media (max-width: 767px) {
@@ -2294,8 +2307,6 @@ button,
 .booking__form-checkbox-span:hover,
 .booking__form-checkbox-span:focus {
   color: #f9fbfd;
-  -webkit-transform: scale3d(1.02, 1.02, 1.02);
-          transform: scale3d(1.02, 1.02, 1.02);
 }
 
 .booking__form-checkbox-span:active {
@@ -2312,9 +2323,6 @@ button,
   background: #f9fbfd;
   border: none;
   border-radius: 0;
-  -webkit-transition: all 0.5s ease-in-out;
-  -o-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
@@ -2329,9 +2337,6 @@ button,
   background: rgba(255, 255, 255, 0);
   border: 1px solid #101a56;
   border-radius: 2px;
-  -webkit-transition: all 0.5s ease-in-out;
-  -o-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
@@ -2383,6 +2388,11 @@ button,
   padding: 120px 103px;
   padding-bottom: 118px;
 }
+@media (max-width: 1279px) {
+  .contact {
+    padding: 120px 50px 118px;
+  }
+}
 @media (max-width: 1023px) {
   .contact {
     padding: 100px 44px;
@@ -2407,6 +2417,17 @@ button,
 }
 .contact__wrapper img {
   max-width: 560px;
+}
+@media (max-width: 1279px) {
+  .contact__wrapper {
+    -webkit-column-gap: 50px;
+       -moz-column-gap: 50px;
+            column-gap: 50px;
+  }
+  .contact__wrapper img {
+    width: 500px;
+    height: 274px;
+  }
 }
 @media (max-width: 1023px) {
   .contact__wrapper {
@@ -2447,6 +2468,11 @@ button,
   font-size: 18px;
   line-height: 27px;
   color: #011c40;
+}
+@media (max-width: 1279px) {
+  .contact__info {
+    padding-top: 36px;
+  }
 }
 @media (max-width: 1023px) {
   .contact__info {
@@ -2522,6 +2548,12 @@ button,
   width: 560px;
   height: 306px;
 }
+@media (max-width: 1279px) {
+  .contact__map {
+    width: 500px;
+    height: 274px;
+  }
+}
 @media (max-width: 1023px) {
   .contact__map {
     width: 324px;
@@ -2559,6 +2591,12 @@ button,
   -ms-grid-row: 1;
       grid-row-start: 1;
   z-index: 1;
+}
+@media (max-width: 1279px) {
+  .ymaps-2-1-79-map {
+    width: 500px;
+    height: 274px;
+  }
 }
 @media (max-width: 1023px) {
   .ymaps-2-1-79-map {

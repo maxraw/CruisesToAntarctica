@@ -18,6 +18,10 @@
   padding: 50px 163px;
   gap: 1vw;
 
+  @include vp-1279 {
+    padding: 50px;
+  }
+
   @include vp-1023 {
     display: grid;
     grid-template-columns: 1fr;
@@ -171,8 +175,6 @@
   font-size: 14px;
   line-height: 21px;
   color: $color-tangaroa-opacity;
-  transition: $trans-easeinout;
-  transition-property: all;
   opacity: 0;
 }
 
@@ -261,7 +263,6 @@
   font-size: 10px;
   line-height: 13px;
   color: $color-alice-blue;
-  transition: $trans-easeinout;
   cursor: pointer;
 
   @include vp-767 {
@@ -273,7 +274,6 @@
 .booking__form-checkbox-span:hover,
 .booking__form-checkbox-span:focus {
   color: $color-alice-blue;
-  transform: $trans-scale3d;
 }
 
 .booking__form-checkbox-span:active {
@@ -290,7 +290,6 @@
   background: $color-alice-blue;
   border: none;
   border-radius: 0;
-  transition: $trans-easeinout;
   appearance: none;
   cursor: pointer;
 }
@@ -303,7 +302,6 @@
   background: $color-transparent;
   border: 1px solid $color-sapphire;
   border-radius: 2px;
-  transition: $trans-easeinout;
   appearance: none;
   opacity: 0;
 }

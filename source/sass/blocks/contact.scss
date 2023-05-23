@@ -2,6 +2,10 @@
   padding: 120px 103px;
   padding-bottom: 118px;
 
+  @include vp-1279 {
+    padding: 120px 50px 118px;
+  }
+
   @include vp-1023 {
     padding: 100px 44px;
     padding-bottom: 36px;
@@ -20,6 +24,15 @@
 
   img {
     max-width: 560px;
+  }
+
+  @include vp-1279 {
+    column-gap: 50px;
+
+    img {
+      width: 500px;
+      height: 274px;
+    }
   }
 
   @include vp-1023 {
@@ -56,6 +69,10 @@
     font-size: 18px;
     line-height: 27px;
     color: $color-tangaroa;
+  }
+
+  @include vp-1279 {
+    padding-top: 36px;
   }
 
   @include vp-1023 {
@@ -128,6 +145,11 @@
   width: 560px;
   height: 306px;
 
+  @include vp-1279 {
+    width: 500px;
+    height: 274px;
+  }
+
   @include vp-1023 {
     width: 324px;
     height: 335px;
@@ -156,6 +178,11 @@
   grid-column-start: 1;
   grid-row-start: 1;
   z-index: 1;
+
+  @include vp-1279 {
+    width: 500px;
+    height: 274px;
+  }
 
   @include vp-1023 {
     width: 324px;

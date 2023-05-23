@@ -3,6 +3,10 @@
   padding: 122px 105px 145px;
   gap: 20px;
 
+  @include vp-1279 {
+    padding: 122px 60px 145px;
+  }
+
   @include vp-1023 {
     padding: 101px 44px 78px;
     gap: 14px;
@@ -42,6 +46,14 @@
     font-size: 16px;
     line-height: 24px;
     color: $color-tangaroa;
+  }
+
+  @include vp-1279 {
+    width: 80%;
+
+    h2 {
+      margin-top: 10px;
+    }
   }
 
   @include vp-1023 {
