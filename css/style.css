@@ -1326,6 +1326,7 @@ button,
 }
 
 .intro__text-container h1 {
+  width: 636px;
   margin: 0;
   font-weight: 700;
   font-size: 54px;
@@ -1507,10 +1508,12 @@ button,
 }
 
 .catalog__item a {
+  width: 100%;
   max-width: 210px;
   text-decoration: none;
-  padding: 10px 46px;
+  padding: 10px 0;
   word-wrap: break-word;
+  text-align: center;
   color: #011c40;
   background-color: #f9fbfd;
   border-radius: 0;
@@ -1736,12 +1739,6 @@ button,
   font-size: 14px;
   line-height: 21px;
   color: rgba(1, 28, 64, 0.7);
-  -webkit-transition: all 0.5s ease-in-out;
-  -o-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
-  -webkit-transition-property: all;
-  -o-transition-property: all;
-  transition-property: all;
   opacity: 0;
 }
 
@@ -1851,17 +1848,12 @@ button,
   font-size: 10px;
   line-height: 13px;
   color: #f9fbfd;
-  -webkit-transition: all 0.5s ease-in-out;
-  -o-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
   cursor: pointer;
 }
 
 .booking__form-checkbox-span:hover,
 .booking__form-checkbox-span:focus {
   color: #f9fbfd;
-  -webkit-transform: scale3d(1.02, 1.02, 1.02);
-  transform: scale3d(1.02, 1.02, 1.02);
 }
 
 .booking__form-checkbox-span:active {
@@ -1878,9 +1870,6 @@ button,
   background: #f9fbfd;
   border: none;
   border-radius: 0;
-  -webkit-transition: all 0.5s ease-in-out;
-  -o-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -1895,9 +1884,6 @@ button,
   background: rgba(255, 255, 255, 0);
   border: 1px solid #101a56;
   border-radius: 2px;
-  -webkit-transition: all 0.5s ease-in-out;
-  -o-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -2184,6 +2170,53 @@ button,
     }
   }
 */
+
+@media (max-width: 1279px) {
+  .travel {
+    padding: 122px 60px 145px;
+  }
+
+  .travel__information {
+    width: 80%;
+  }
+
+  .travel__information h2 {
+    margin-top: 10px;
+  }
+
+  .booking__container {
+    padding: 50px;
+  }
+
+  .contact {
+    padding: 120px 50px 118px;
+  }
+
+  .contact__wrapper {
+    -webkit-column-gap: 50px;
+    -moz-column-gap: 50px;
+    column-gap: 50px;
+  }
+
+  .contact__wrapper img {
+    width: 500px;
+    height: 274px;
+  }
+
+  .contact__info {
+    padding-top: 36px;
+  }
+
+  .contact__map {
+    width: 500px;
+    height: 274px;
+  }
+
+  .ymaps-2-1-79-map {
+    width: 500px;
+    height: 274px;
+  }
+}
 
 @media (max-width: 1023px) {
   .container {
@@ -2670,6 +2703,7 @@ button,
   }
 
   .intro__text-container h1 {
+    width: 265px;
     font-size: 36px;
     line-height: 45px;
   }
