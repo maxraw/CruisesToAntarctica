@@ -57,6 +57,8 @@
   }
 
   @include vp-1023 {
+    width: 50%;
+
     h2 {
       margin-top: 0;
       margin-bottom: 16px;
